@@ -1,0 +1,12 @@
+# For data manipulation and scientific computing
+pandas
+numpy<2.0
+
+# For machine learning and deep learning
+scikit-learn
+torch
+vaderSentiment
+nltk
+
+# For creating the web application
+streamlit

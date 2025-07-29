@@ -1,0 +1,8 @@
+papers/
+resources/
+outputs/
+data/
+models/
+.docx
+notebooks/*
+!notebooks/helper.pygit add .
