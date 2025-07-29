@@ -3,6 +3,6 @@ resources/
 outputs/
 data/
 models/
-.docx
+*.docx
 notebooks/*
 !notebooks/helper.pygit add .
