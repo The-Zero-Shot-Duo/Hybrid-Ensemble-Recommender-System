@@ -1,7 +1,7 @@
 gdown==5.2.0
 matplotlib==3.5.1
 nltk==3.9.1
-numpy==1.21.5
+numpy<2.0
 pandas==1.4.2
 scikit-learn==1.0.2
 scikit-surprise==1.1.4
@@ -10,3 +10,4 @@ torch==2.4.1
 torchvision==0.19.1
 torchaudio==2.4.1
 vaderSentiment==3.3.2
+xgboost==2.1.4
