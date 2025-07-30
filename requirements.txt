@@ -1,7 +1,7 @@
 # For data manipulation and scientific computing
 pandas
 numpy<2.0
-
+matplotlib
 # For machine learning and deep learning
 scikit-learn
 torch
