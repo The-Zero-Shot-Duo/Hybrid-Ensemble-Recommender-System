@@ -193,3 +193,11 @@ if st.button("Get Recommendations"):
         import traceback
         st.error(f"❌ Error: {e}")
         st.code(traceback.format_exc())
+        
+        
+import streamlit.web.cli as stcli
+import sys
+
+if __name__ == "__main__":
+    sys.argv = ["streamlit", "run", "app.py", "--server.port", "7860", "--server.address", "0.0.0.0"]
+    sys.exit(stcli.main())
