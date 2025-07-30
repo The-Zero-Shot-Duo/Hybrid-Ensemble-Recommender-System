@@ -28,25 +28,31 @@ from torch.utils.data import Dataset, DataLoader
 # 'stopwords': A list of common words (e.g., "a", "the") to filter out.
 # 'wordnet': A lexical database required for lemmatization (reducing words to their base form).
 # 'punkt': A pre-trained tokenizer for splitting text into sentences or words.
-try:
-    nltk.data.find('corpora/stopwords')
-except LookupError:
-    print("Downloading NLTK stopwords...")
-    nltk.download('stopwords')
+# try:
+#     nltk.data.find('corpora/stopwords')
+# except LookupError:
+#     print("Downloading NLTK stopwords...")
+#     nltk.download('stopwords')
 
-try:
-    nltk.data.find('corpora/wordnet')
-except LookupError:
-    print("Downloading NLTK wordnet...")
-    nltk.download('wordnet')
+# try:
+#     nltk.data.find('corpora/wordnet')
+# except LookupError:
+#     print("Downloading NLTK wordnet...")
+#     nltk.download('wordnet')
 
-try:
-    nltk.data.find('tokenizers/punkt')
-    nltk.data.find('tokenizers/punkt_tab')
-except LookupError:
-    print("Downloading NLTK punkt tokenizer...")
-    nltk.download('punkt')
-    nltk.download('punkt_tab')
+# try:
+#     nltk.data.find('tokenizers/punkt')
+#     nltk.data.find('tokenizers/punkt_tab')
+# except LookupError:
+#     print("Downloading NLTK punkt tokenizer...")
+#     nltk.download('punkt')
+#     nltk.download('punkt_tab')
+
+for resource in ["punkt", "punkt_tab", "wordnet", "stopwords"]:
+    try:
+        nltk.data.find(resource)
+    except LookupError:
+        nltk.download(resource, quiet=True)
 
 # --------------------------------------
 # Section 3: Data Loading Functions
@@ -376,7 +382,7 @@ def get_ncf_predictions(
         model = NCF(num_users=len(user2idx), num_items=len(item2idx), embedding_dim=embedding_dim)
         
         # Load the pre-trained weights into the model
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
         
         # Set the model to evaluation mode. This is crucial as it disables layers
         # like Dropout or BatchNorm, ensuring deterministic output for predictions.
