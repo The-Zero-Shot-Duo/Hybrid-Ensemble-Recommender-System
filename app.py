@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_page_config(page_title="Amazon Recommender", page_icon="📚")
+
 def main():
     st.title("My Streamlit App")
 
@@ -29,7 +31,6 @@ def main():
     sys.path.append(BASE_DIR)
     warnings.filterwarnings("ignore", category=UserWarning, module="xgboost")
 
-    st.set_page_config(page_title="Amazon Recommender", page_icon="📚")
     st.title("📚 Amazon Product Recommender")
     st.markdown("Choose a user or product to get recommendations. This app uses the final hybrid model outputs.")
 
