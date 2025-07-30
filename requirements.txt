@@ -7,6 +7,9 @@ scikit-learn
 torch
 vaderSentiment
 nltk
-
+xgboost
 # For creating the web application
 streamlit
+gdown
+pickle
+gzip
