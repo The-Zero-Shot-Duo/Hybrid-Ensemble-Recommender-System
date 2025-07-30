@@ -1,12 +1,16 @@
 # For data manipulation and scientific computing
 pandas
 numpy<2.0
+matplotlib
 
 # For machine learning and deep learning
 scikit-learn
 torch
 vaderSentiment
 nltk
+scikit-surprise==1.1.4
+xgboost
 
 # For creating the web application
 streamlit
+gdown
