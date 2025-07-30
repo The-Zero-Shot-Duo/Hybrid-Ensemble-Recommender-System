@@ -1,5 +1,8 @@
-import os, sys, pickle, warnings
 import streamlit as st
+
+st.title("My Streamlit App")
+
+import os, sys, pickle, warnings
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
