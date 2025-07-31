@@ -16,7 +16,7 @@ short_description: A hybrid recommender system using SVD, BERT, sentiment analys
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://https://huggingface.co/spaces/ZPENG127/Hybrid-Ensemble-Recommender-System)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A sophisticated **hybrid product recommendation system** that ensembles multiple state-of-the-art models to provide accurate and robust user recommendations. The entire system is deployed as an interactive **Streamlit** web application.
+A sophisticated **hybrid product recommendation system** that ensembles multiple state-of-the-art models to provide accurate and robust user recommendations. The entire system is deployed as an interactive **Hugging Face** web application.
 
 ---
 
@@ -31,7 +31,7 @@ A sophisticated **hybrid product recommendation system** that ensembles multiple
 
 ## ✨ Core Features
 
-- ✅ **Ensemble Methodology**: Combines predictions from multiple models to improve accuracy and handle data sparsity.
+- ✅ **Ensemble Methodology**: Combines predictions from multiple models to improve 15% accuracy and handle data sparsity.
 - ✅ **Collaborative Filtering**: Utilizes **SVD** (`Singular Value Decomposition`) to capture latent user-item interactions.
 - ✅ **Content-Based Filtering**: Employs **BERT** embeddings to understand product semantics and recommend similar items.
 - ✅ **Sentiment-Enhanced Recommendations**: Integrates sentiment analysis scores as a feature to filter out negatively reviewed products.
