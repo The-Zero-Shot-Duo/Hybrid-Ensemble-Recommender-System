@@ -4,7 +4,3 @@ outputs/
 data/
 models/
 *.docx
-notebooks/*
-!notebooks/helper.py
-app/05_app.ipynb
-app/05_app.py
