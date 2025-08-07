@@ -24,7 +24,7 @@ A sophisticated **hybrid product recommendation system** that ensembles multiple
 
 | Link                                                                                            | Description                                         |
 | ----------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| 🔴 **[Live Demo (Hugging Face Spaces)]**                                                        | Interact with the deployed Streamlit application.   |
+| 🔴 **[Live Demo](https://https://huggingface.co/spaces/ZPENG127/Hybrid-Ensemble-Recommender-System)**                                                        | Interact with the deployed Streamlit application.   |
 | 🟡 **[GitHub Repository](https://github.com/Amos-Peng-127/Hybrid-Ensemble-Recommender-System)** | Browse the source code, notebooks, and setup files. |
 
 ---
