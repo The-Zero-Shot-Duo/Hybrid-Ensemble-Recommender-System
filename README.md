@@ -13,7 +13,7 @@ short_description: A hybrid recommender system using SVD, BERT, sentiment analys
 
 # 📚 Hybrid Ensemble Recommender System
 
-[![Hugging Face Spaces](https://huggingface.co/spaces/ZPENG127/Hybrid-Ensemble-Recommender-System)
+![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A sophisticated **hybrid product recommendation system** that ensembles multiple state-of-the-art models to provide accurate and robust user recommendations. The entire system is deployed as an interactive **Hugging Face** web application.
