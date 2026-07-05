@@ -7,7 +7,7 @@ sdk: docker
 app_port: 7860
 pinned: false
 license: mit
-short_description: A hybrid recommender system using SVD, BERT, sentiment analysis, XGBoost, and NCF.
+short_description: Hybrid recommender with SVD, BERT, XGBoost, and NCF.
 ---
 
 # 📚 Hybrid Ensemble Recommender System
