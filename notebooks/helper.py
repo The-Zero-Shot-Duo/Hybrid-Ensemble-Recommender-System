@@ -48,11 +48,20 @@ from torch.utils.data import Dataset, DataLoader
 #     nltk.download('punkt')
 #     nltk.download('punkt_tab')
 
-for resource in ["punkt", "punkt_tab", "wordnet", "stopwords"]:
-    try:
-        nltk.data.find(resource)
-    except LookupError:
-        nltk.download(resource, quiet=True)
+NLTK_RESOURCES = {
+    "punkt": "tokenizers/punkt",
+    "punkt_tab": "tokenizers/punkt_tab",
+    "wordnet": "corpora/wordnet",
+    "stopwords": "corpora/stopwords",
+}
+
+
+def ensure_nltk_resources():
+    for package, resource_path in NLTK_RESOURCES.items():
+        try:
+            nltk.data.find(resource_path)
+        except LookupError:
+            nltk.download(package, quiet=True)
 
 # --------------------------------------
 # Section 3: Data Loading Functions

@@ -1,0 +1,15 @@
+.git
+.streamlit
+__pycache__
+*.py[cod]
+.pytest_cache
+.ipynb_checkpoints
+*.json.gz
+notebooks/*.ipynb
+data
+models
+outputs
+papers
+resources
+venv
+.venv

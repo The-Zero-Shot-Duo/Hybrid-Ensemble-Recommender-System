@@ -4,3 +4,5 @@ outputs/
 data/
 models/
 *.docx
+__pycache__/
+*.py[cod]

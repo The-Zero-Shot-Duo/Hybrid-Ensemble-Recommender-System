@@ -3,9 +3,8 @@ title: Hybrid Ensemble Recommender System
 emoji: 📚
 colorFrom: pink
 colorTo: green
-sdk: streamlit
-sdk_version: 1.33.0
-app_file: app.py
+sdk: docker
+app_port: 7860
 pinned: false
 license: mit
 short_description: A hybrid recommender system using SVD, BERT, sentiment analysis, XGBoost, and NCF.
